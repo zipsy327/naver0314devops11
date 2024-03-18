@@ -1,0 +1,22 @@
+package day0318;
+
+import java.util.Scanner;
+
+public class Ex6_ScoreSwitch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int score;
+		char grade;
+		System.out.println("점수 입력");
+		score=sc.nextInt();
+		//if문을 이용해서 점수를 잘못입력했을경우 메서드 종료를 하자
+		if(score<1 || score>100)
+		{
+			System.out.println("잘못된 점수입니다");
+			return; //main 메서드를 종료(곧 프로그램이 종료됨)
+		}
+	}
+
+}
