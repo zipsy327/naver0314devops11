@@ -1,0 +1,21 @@
+package day0315;
+
+public class Ex10_Operator {
+	public static void main(String[] args) {
+		//증감연산자
+		//전치일경우는 1순위, 후치일경우는 끝순위
+		
+		int m=5,n=5;
+		int a=10,b=10;
+		//단 단항일경우는 상관없음
+		m++;
+		++n;
+		System.out.println("m="+m);//6
+		System.out.println("n="+n);//6
+		
+		a+=m++;//a=a+m;
+		System.out.println("a="+a);
+		System.out.println("m="+m);
+		
+	}
+}

@@ -1,0 +1,28 @@
+package day0315;
+
+public class Ex3_Output {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int year=2024;
+		int month=3;
+		int day=15;
+		
+		String msg="Have a Nice Day!!";
+		char blood='B';
+		double avg=97.4567;
+		
+		System.out.println("** 출력 1 **");
+		System.out.println("날짜:"+year+"-"+month+"-"+day);
+		System.out.print("혈액형 : "+blood+"형");//print 는 개행을 안함
+		System.out.println("\t평균:"+avg);
+		System.out.println("==========================");
+		//printf 를 이용해서 출력해보자(JDK5부터)
+		//변환기호를 이용해서 출력한다
+		//정수:%d,실수:%f,문자:%c,문자열:%s
+		System.out.printf("**%40s**\n\n",msg);//40칸의 우측기준으로 출력
+		System.out.printf("**%-40s**\n\n",msg);//40칸의 좌측기준으로 출력
+
+	}
+
+}

@@ -1,0 +1,32 @@
+처음에 한번만 이메일과 유저명 확인
+git config --global user.name "[사용자명]"
+git config --global user.email "[사용자이메일]"
+
+해당폴더를 git 과 연결하기 위한 명령어
+git init   : 해당폴더를 깃하고 연결하기 위해서 초기화(.git 이 생김)
+git branch -M main  : (기본이 master 이므로 main 브랜치 생성)
+git remote add origin https://github.com/zipsy327/naver0314devops11.git
+(이미 다른깃하고 연결되어있어 오류날경우
+  git remote set-url origin https://github.com/zipsy327/naver0314devops11.git)
+
+git 의 README 때문에 바로 push하면 오류가 난다
+먼저 pull 로 가져온후 push를 해야한다
+
+git pull origin main
+ls 로 목록확인하기(윈도우는 dir,리눅스는 ls)
+
+로칼영역에 변경된 코드 저장하기
+git add . (파일 추가)
+git commit -m "메세지"
+
+로칼영역에서 원격으로 보내기
+git push origin main
+(git push origin +main : 강제로 push하기)
+
+-Git 의 내용 그대로 가져오기
+1. zip 파일 다운받은후 압축풀기
+2. 명령어로 가져오기
+   $ git clone https://github.com/zipsy327/naver0314devops11.git
+
+
+

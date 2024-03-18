@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;day0315.Ex1DataType&apos; to &apos;Ex1_DataType&apos;&#x0D;&#x0A;- Original project: &apos;Naver0314JavaProject&apos;&#x0D;&#x0A;- Original element: &apos;day0315.Ex1DataType&apos;&#x0D;&#x0A;- Renamed element: &apos;day0315.Ex1_DataType&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Ex1DataType&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;day0315{Ex1DataType.java[Ex1DataType" matchStrategy="1" name="Ex1_DataType" qualified="false" references="true" similarDeclarations="false" stamp="1710466520270" textual="false" version="1.0"/>
+</session>
