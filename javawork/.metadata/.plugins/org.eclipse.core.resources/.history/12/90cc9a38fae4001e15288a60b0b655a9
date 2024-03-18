@@ -1,0 +1,11 @@
+package day0318;
+
+public class Ex13_ForMunje {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("지수승 구하기");
+		System.out.println("3의 3승은 "+Math.pow(3, 3));
+	}
+
+}

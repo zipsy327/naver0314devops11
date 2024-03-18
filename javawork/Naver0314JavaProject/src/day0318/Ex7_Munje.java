@@ -1,5 +1,7 @@
 package day0318;
 
+import java.util.Scanner;
+
 public class Ex7_Munje {
 
 	public static void main(String[] args) {
@@ -14,6 +16,49 @@ public class Ex7_Munje {
 		 * 가족수
 		 * 실수령액
 		 */
+		Scanner sc=new Scanner(System.in);
+		String name;
+		int gibon,familysu,totpay;
+		System.out.println("이름입력");
+		name=sc.nextLine();
+		System.out.println("기본급은?");
+		gibon=sc.nextInt();
+		System.out.println("가족수는?");
+		familysu=sc.nextInt();
+		
+		if(familysu>=3)
+		{
+			totpay=gibon+(familysu*50000);
+		}else {
+			totpay=gibon+30000;
+		}
+		
+		System.out.println("** 결과 출력 **");
+		System.out.println("이름:"+name);
+		System.out.println("기본급:"+gibon);
+		System.out.println("가족수:"+familysu);
+		System.out.println("실수령액:"+totpay);
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
