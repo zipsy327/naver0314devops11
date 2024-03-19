@@ -1,0 +1,21 @@
+package day0319;
+
+import java.util.Date;
+
+public class Ex9_DateCalendar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Date 클래스를 이용해서 년,월,일,시분,초 얻기(JDK1.1 이후 Deprecate 되고 Calendar를 권장하나 여전히 많이 사용중)
+		Date date=new Date();//디폴트로 생성시 현재 날짜와 시간을 얻는다
+		int year=date.getYear();
+		int month=date.getMonth();
+		int day=date.getDate();
+		int week=date.getDay();//요일(0:일,1:월,2:화....6:토)
+		System.out.println("현재년도:"+year);
+		System.out.println("현재월:"+month);
+		System.out.println("현재일:"+day);
+		System.out.println("현재요일:"+week);
+	}
+
+}

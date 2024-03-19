@@ -1,0 +1,20 @@
+package day0319;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Ex10_DateNumberFormat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//현재날짜를 문자열로 출력하기
+		Date date=new Date();
+		
+		SimpleDateFormat sdf1=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss EEE");
+		System.out.println(sdf1.format(date));
+		
+		SimpleDateFormat sdf2=new SimpleDateFormat("yyyy-MM-dd a hh:mm:ss EEEE");
+		System.out.println(sdf2.format(date));
+	}
+
+}

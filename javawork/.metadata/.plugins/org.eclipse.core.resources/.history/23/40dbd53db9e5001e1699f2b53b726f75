@@ -70,12 +70,8 @@ public class Ex8_String {
 		}
 		
 		String msg="   hello   ";
-		System.out.println(msg.length());//11글자
-		System.out.println(msg.trim().length());//양쪽 공백 제거후 5글자
+		System.out.println(msg.length());
 		
-		//valueOf: 어떤 타입의 데이타든지 모두 String 으로 변환해준다
-		System.out.println(String.valueOf(3));//정수 3이 문자열 "3"으로 반환
-		System.out.println(3+"");//이방법도 있음
 	}
 }
 
