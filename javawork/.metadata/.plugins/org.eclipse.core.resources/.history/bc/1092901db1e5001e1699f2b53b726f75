@@ -1,0 +1,19 @@
+package day0319;
+
+public class Ex8_String {
+	public static void main(String[] args) {
+		System.out.println("** String 객체의 Method 공부하기 **");
+		String str1="Have a Nice Day";
+		String str2="apple";
+		String str3="Apple";
+		
+		System.out.println(str1.charAt(7));//7번 인덱스의 문자 : N
+		System.out.println(str1.charAt(0));//0번 인덱스의 문자 : H
+		System.out.println(str1.indexOf('a'));//첫번째 'a' 의 위치 : 1
+		System.out.println(str1.indexOf('X'));//첫번째 'X' 의 위치 : -1(없을경우 -1)
+		System.out.println(str1.lastIndexOf('a'));//마지막 'a' 의 위치 : 13
+		System.out.println(str1.length());//str1 의 총 길이:15
+		System.out.println(str2.concat("***"));//str2문자에 *** 추가해서 반환
+		
+	}
+}
