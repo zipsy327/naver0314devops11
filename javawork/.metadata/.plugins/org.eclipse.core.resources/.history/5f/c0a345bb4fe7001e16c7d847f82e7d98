@@ -46,7 +46,9 @@ public class Ex7_Study701 {
 		//현재 날짜를 출력하시오 (년-월-일)
 		Date date=new Date();
 		SimpleDateFormat sdf=new SimpleDateFormat("yyyy년 MM월 dd일");
-		System.out.println("\t"+sdf.format(date)+"\t**701 스터디팀**\n");
+		System.out.println("\t"+sdf.format(date));
+		
+		System.out.println("\t\t**701 스터디팀**\n");
 		for(int i=0;i<team.length;i++)
 		{
 			System.out.printf("[%d조 팀]\t",i+1);

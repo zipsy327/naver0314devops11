@@ -1,13 +1,9 @@
 package day0321;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Ex7_Study701 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
 		String []members= {
 				"강하윤","공병현","김도훈","김우형","김정호",
 				"김창인","민경진","박민지","박보민","박주용",
@@ -18,8 +14,7 @@ public class Ex7_Study701 {
 		};
 		int []rnd=new int[30];
 		//2차원 배열에 5명씩 총 6조
-		String [][]team=new String[6][5];//6행(조의갯수)5열(팀원의 인원수)
-		//0~29까지 서로 중복되지 않게 배열에 임의로 발생시켜 넣고
+		String [][]team=new String[6][5];
 		Loop:
 		for(int i=0;i<members.length;i++)
 		{
@@ -43,10 +38,7 @@ public class Ex7_Study701 {
 			}
 		}
 		
-		//현재 날짜를 출력하시오 (년-월-일)
-		Date date=new Date();
-		SimpleDateFormat sdf=new SimpleDateFormat("yyyy년 MM월 dd일");
-		System.out.println("\t"+sdf.format(date)+"\t**701 스터디팀**\n");
+		System.out.println("\t\t**701 스터디팀**\n");
 		for(int i=0;i<team.length;i++)
 		{
 			System.out.printf("[%d조 팀]\t",i+1);
