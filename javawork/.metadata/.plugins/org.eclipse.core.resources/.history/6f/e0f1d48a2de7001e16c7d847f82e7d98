@@ -1,0 +1,12 @@
+package day0321;
+
+public class Ex5_ArrayAgeCount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int []memberAges= {12,56,34,23,34,59,46,6,11,29,32,49,51,38,44,55,5,7,15,28};
+		System.out.println("총 인원수 :"+memberAges.length);
+
+	}
+
+}
