@@ -31,23 +31,5 @@ public class Ex10_ClassMunje {
 		writeMember(m2);
 		writeMember(m3);
 		writeMember(m4);
-		
-		System.out.println("** m1 멤버의 값 변경하기 **");
-		m1.setName("이영자");
-		m1.setHp("011-2323-6767");
-		m1.setAddr("부산");
-		
-		writeMember(m1);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-+
