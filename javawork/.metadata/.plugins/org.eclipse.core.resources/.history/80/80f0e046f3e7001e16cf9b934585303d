@@ -1,0 +1,19 @@
+package day0322;
+
+class Orange{
+	//private 접근지정자는 같은 클래스내에서만 접근이 가능
+	private String name;
+	private int age;
+	
+	//
+	
+	
+}
+public class Ex2_Object {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
