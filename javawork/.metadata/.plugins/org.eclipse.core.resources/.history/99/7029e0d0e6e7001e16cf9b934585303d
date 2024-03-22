@@ -32,7 +32,6 @@ public class Book199_9 {
 					for(int i=0;i<score.length;i++)
 					{
 						System.out.print("scores["+i+"] >>");
-						score[i]=sc.nextInt();
 					}
 					break;
 				case 3:
