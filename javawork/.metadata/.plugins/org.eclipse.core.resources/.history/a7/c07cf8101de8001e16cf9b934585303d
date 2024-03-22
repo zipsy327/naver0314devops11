@@ -1,0 +1,26 @@
+package day0322;
+/*
+ *  생성자(constructor) 의 특징
+ *  1. 클래스명과 동일한 메서드명으로 만들어야한다
+ *  2. 리턴 타입이 없다
+ *  3. overloading 이 가능하다(여러개 생성 가능)
+ *  4. 생성할때 단 한번 호출된다
+ *  5. 멤버변수의 초기화를 담당한다
+ */
+class Kiwi
+{
+	public Kiwi()
+	{
+		System.out.println("디폴트 생성자");
+	}
+}
+
+
+public class Ex8_Constructor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Kiwi k1=new Kiwi();
+	}
+
+}
