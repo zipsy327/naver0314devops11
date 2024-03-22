@@ -1,0 +1,42 @@
+package day0322;
+
+class Oper
+{
+	//메서드 오버로딩
+	static public int sum(int a,int b)
+	{
+		return a+b;
+	}
+	static public double sum(double a,double b)
+	{
+		return a+b;
+	}
+	static public String sum(String a,String b)
+	{
+		return a+b;
+	}
+}
+public class Ex4_Overloading {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Oper.sum(5, 100));
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

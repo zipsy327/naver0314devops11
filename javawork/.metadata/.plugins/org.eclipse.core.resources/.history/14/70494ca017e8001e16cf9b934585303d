@@ -1,0 +1,15 @@
+package day0322;
+
+import java.util.Scanner;
+
+public class Ex7_ClassSawonArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Sawon []sawon=null;
+		int inwon;
+		Scanner sc=new Scanner(System.in);
+		
+	}
+
+}

@@ -93,6 +93,9 @@ public class Ex3_StaticMethod {
 		System.out.println("** 상품 2의 수량만 변경 **");
 		sang2.setSu(5);
 		sang2.writeData();
+		
+		
+		
 	}
 
 }

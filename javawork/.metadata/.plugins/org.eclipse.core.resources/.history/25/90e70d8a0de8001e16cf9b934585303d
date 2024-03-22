@@ -1,0 +1,17 @@
+package day0322;
+
+public class Ex5_CallBy {
+
+	public static void changeNum(int n)
+	{
+		n=10;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=50;
+		changeNum(n);
+		System.out.println("n="+n);
+
+	}
+
+}
