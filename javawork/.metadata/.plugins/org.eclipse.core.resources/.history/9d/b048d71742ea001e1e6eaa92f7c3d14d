@@ -1,0 +1,7 @@
+package day0325;
+
+public class Shop {
+	private String sang;
+	private int su;
+	private int dan;
+}
