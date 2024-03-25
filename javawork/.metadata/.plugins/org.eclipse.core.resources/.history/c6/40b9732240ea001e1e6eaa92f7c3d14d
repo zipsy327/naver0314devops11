@@ -32,46 +32,15 @@ class Member
 		this(name,hp,"부산");
 	}
 	//setter
-	public void setName(String name)
-	{
-		this.name=name;
-	}
 	
-	public void setHp(String hp)
-	{
-		this.hp=hp;
-	}
-	
-	public void setAddr(String addr)
-	{
-		this.addr=addr;
-	}
 	//getter
-	public String getName()
-	{
-		return name;
-	}
-	
-	public String getHp()
-	{
-		return hp;
-	}
-	
-	public String getAddr()
-	{
-		return addr;
-	}
 	
 }
-
 public class Ex10_ClassMunje {
 
 	public static void writeMember(Member m)
 	{
-		System.out.println("** "+m.getName()+" 님의 정보 **");
-		System.out.println("핸드폰 : "+m.getHp());
-		System.out.println("주 소 : "+m.getAddr());
-		System.out.println("=".repeat(20));
+		
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -95,3 +64,13 @@ public class Ex10_ClassMunje {
 	}
 }
 
+
+
+
+
+
+
+
+
+
++

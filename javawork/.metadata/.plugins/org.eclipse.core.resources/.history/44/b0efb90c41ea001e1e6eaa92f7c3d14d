@@ -68,10 +68,7 @@ public class Ex10_ClassMunje {
 
 	public static void writeMember(Member m)
 	{
-		System.out.println("** "+m.getName()+" 님의 정보 **");
-		System.out.println("핸드폰 : "+m.getHp());
-		System.out.println("주 소 : "+m.getAddr());
-		System.out.println("=".repeat(20));
+		
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -95,3 +92,13 @@ public class Ex10_ClassMunje {
 	}
 }
 
+
+
+
+
+
+
+
+
+
++

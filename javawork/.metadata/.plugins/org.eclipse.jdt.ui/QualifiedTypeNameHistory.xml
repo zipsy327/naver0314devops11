@@ -5,9 +5,20 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.text.NumberFormat"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="day0322.Ex1_Object"/>
+    <fullyQualifiedTypeName name="day0322.Apple"/>
+    <fullyQualifiedTypeName name="day0322.Banana"/>
+    <fullyQualifiedTypeName name="day0322.Orange"/>
+    <fullyQualifiedTypeName name="day0322.MyShop"/>
+    <fullyQualifiedTypeName name="day0322.Oper"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="day0322.Sawon"/>
+    <fullyQualifiedTypeName name="day0322.Kiwi"/>
+    <fullyQualifiedTypeName name="day0322.Stu"/>
+    <fullyQualifiedTypeName name="day0322.Student"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="day0322.Member"/>
 </qualifiedTypeNameHistroy>
