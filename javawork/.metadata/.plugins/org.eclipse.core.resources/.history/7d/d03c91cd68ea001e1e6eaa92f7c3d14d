@@ -1,0 +1,34 @@
+package day0325;
+
+//같은 패키지내에서는 부모가 가진 메서드중 private 을 제외하고 모두 상속받음
+class Parent
+{
+	void method1()
+	{
+		System.out.println("부모의 디폴트 메서드");
+	}
+	
+	protected void method2()
+	{
+		System.out.println("부모의 protected 메서드");
+	}
+	
+	private void method3()
+	{
+		System.out.println("부모의 private 메서드");
+	}
+	
+	public void method4()
+	{
+		System.out.println("부모의 public 메서드");
+	}
+}
+
+public class Ex5_Inheri {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

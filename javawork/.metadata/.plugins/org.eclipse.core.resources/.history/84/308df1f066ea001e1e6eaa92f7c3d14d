@@ -1,0 +1,26 @@
+package day0325;
+
+//상속
+class AA{
+	AA()
+	{
+		System.out.println("AA 의 디폴트 생성자");
+	}
+}
+
+class BB extends AA
+{
+	BB()
+	{
+		System.out.println("BB 의 디폴트 생성자");
+	}
+}
+
+public class Ex4_Inheri {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BB b=new BB();
+	}
+
+}

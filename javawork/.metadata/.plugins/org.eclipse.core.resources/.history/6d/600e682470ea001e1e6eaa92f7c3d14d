@@ -1,0 +1,40 @@
+package day0325;
+
+class Member
+{
+	private String memberName;
+	private int memberCount;
+	
+	Member() {
+		// TODO Auto-generated constructor stub
+		this("동창회",10);
+	}
+	
+	Member(String memberName,int memberCount)
+	{
+		this.memberName=memberName;
+		this.memberCount=memberCount;
+	}
+	
+	public void writeMember()
+	{
+		System.out.println("모임 이름 : "+memberName);
+		System.out.println("모임 정원 : "+memberCount);
+	}
+}
+public class Ex7_Inheri {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+
+
+
+
+
+

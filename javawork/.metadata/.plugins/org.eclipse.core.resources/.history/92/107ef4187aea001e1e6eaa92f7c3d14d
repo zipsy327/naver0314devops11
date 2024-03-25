@@ -1,0 +1,61 @@
+package day0325;
+
+class Animal
+{
+	public void writeAnimal()
+	{
+		System.out.println("Animal 부모클래스!!");
+	}
+}
+
+class Cat extends Animal
+{
+	@Override
+	public void writeAnimal() {
+		// TODO Auto-generated method stub
+		super.writeAnimal();
+		System.out.println("나는 야옹!! 고양이입니다");
+	}
+	
+	public void play()
+	{
+		System.out.println("야옹야옹!!!");
+	}
+}
+
+class Dog extends Animal
+{
+	@Override
+	public void writeAnimal() {
+		// TODO Auto-generated method stub
+		super.writeAnimal();
+		System.out.println("나는 멍멍 !! 강아지입니다");
+	}
+	
+	public void play()
+	{
+		System.out.println("멍멍멍!!!");
+	}
+}
+//////////////////////////////////////////////////
+public class Ex9_Inheri {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cat cat1=new Cat();
+		cat1.writeAnimal();
+		cat1.play();
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
