@@ -79,11 +79,6 @@ public class Employee {
 		this.position=position;
 		this.age=age;
 	}
-	
-	public int getNetPay()
-	{
-		return gibon+sudang;
-	}
 }
 
 

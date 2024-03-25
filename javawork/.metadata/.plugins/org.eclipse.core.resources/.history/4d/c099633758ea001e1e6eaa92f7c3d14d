@@ -2,14 +2,6 @@ package day0325;
 
 public class Ex3_ClassEmployee {
 
-
-	public static void showTitle() {
-		// TODO Auto-generated method stub
-		System.out.println("\t\t** 사원 정보 **\n");
-		System.out.println("번호\t이름\t직급\t나이\t기본급\t수당\t실수령액");
-		System.out.println("=".repeat(70));
-	}
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Employee []em= {
@@ -31,7 +23,7 @@ public class Ex3_ClassEmployee {
 		em[1].setPay(450,100);//기본급과 수당을 같이 수정
 		//2번 데이타 수정
 		em[2].setSawon("유재남","계장",41);
-		em[2].setPay(410,80);//gibon,sudang 을 변경하는 메서드
+		em[2].setPay(410,80);
 		//3번 데이타 수정
 		em[3].setPay(560,120);
 		//4번 데이타 수정
@@ -44,17 +36,8 @@ public class Ex3_ClassEmployee {
 		for(int i=0;i<em.length;i++)
 		{
 			System.out.println(i+1+"\t"+em[i].getName()+"\t"+em[i].getPosition()+"\t"+
-					em[i].getAge()+"\t"+em[i].getGibon()+"\t"+em[i].getSudang()+"\t"+em[i].getNetPay());//netpay=gibon+sudang
+					em[i].getAge()+"\t"+em[i].getGibon()+"\t"+em[i].getSudang()+"\t"+em[i].getNetPay());
 		}
 	}
+
 }
-
-
-
-
-
-
-
-
-
-

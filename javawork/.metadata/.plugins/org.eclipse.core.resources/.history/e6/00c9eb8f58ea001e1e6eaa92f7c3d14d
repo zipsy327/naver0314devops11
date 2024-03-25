@@ -73,17 +73,6 @@ public class Employee {
 		this.sudang=sudang;
 	}
 	
-	public void setSawon(String name,String position,int age)
-	{
-		this.name=name;
-		this.position=position;
-		this.age=age;
-	}
-	
-	public int getNetPay()
-	{
-		return gibon+sudang;
-	}
 }
 
 

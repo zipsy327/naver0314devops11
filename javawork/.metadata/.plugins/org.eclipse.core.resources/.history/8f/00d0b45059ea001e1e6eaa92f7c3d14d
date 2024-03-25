@@ -2,14 +2,6 @@ package day0325;
 
 public class Ex3_ClassEmployee {
 
-
-	public static void showTitle() {
-		// TODO Auto-generated method stub
-		System.out.println("\t\t** 사원 정보 **\n");
-		System.out.println("번호\t이름\t직급\t나이\t기본급\t수당\t실수령액");
-		System.out.println("=".repeat(70));
-	}
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Employee []em= {
@@ -47,6 +39,12 @@ public class Ex3_ClassEmployee {
 					em[i].getAge()+"\t"+em[i].getGibon()+"\t"+em[i].getSudang()+"\t"+em[i].getNetPay());//netpay=gibon+sudang
 		}
 	}
+
+	public static void showTitle() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
 
 
