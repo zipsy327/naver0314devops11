@@ -1,0 +1,26 @@
+package day0326;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Ex16_FileReaderMemo {
+	static final String FILENAME2="d:/naver0314/memo2.txt";
+	static public void readMemo2() throws IOException
+	{
+		BufferedReader br=null;
+		FileReader fr=null;
+		
+		fr=new FileReader(FILENAME2);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			readMemo2();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

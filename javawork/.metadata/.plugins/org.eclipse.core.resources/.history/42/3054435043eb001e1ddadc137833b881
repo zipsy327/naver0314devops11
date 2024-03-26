@@ -1,0 +1,10 @@
+package day0326;
+
+public class Ex16_FileReaderMemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
