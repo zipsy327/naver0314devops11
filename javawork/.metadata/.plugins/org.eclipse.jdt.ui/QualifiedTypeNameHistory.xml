@@ -19,6 +19,19 @@
     <fullyQualifiedTypeName name="day0322.Kiwi"/>
     <fullyQualifiedTypeName name="day0322.Stu"/>
     <fullyQualifiedTypeName name="day0322.Student"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="day0322.Member"/>
+    <fullyQualifiedTypeName name="day0325.Shop"/>
+    <fullyQualifiedTypeName name="day0325.Employee"/>
+    <fullyQualifiedTypeName name="day0325.Parent1"/>
+    <fullyQualifiedTypeName name="day0325.Sub1"/>
+    <fullyQualifiedTypeName name="day0325.Parent2"/>
+    <fullyQualifiedTypeName name="day0325.Sub2"/>
+    <fullyQualifiedTypeName name="day0325.Member"/>
+    <fullyQualifiedTypeName name="day0325.SubMember"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="day0325.Phone2"/>
+    <fullyQualifiedTypeName name="day0325.SmartPhone2"/>
+    <fullyQualifiedTypeName name="day0325.Animal"/>
+    <fullyQualifiedTypeName name="day0325.Cat"/>
+    <fullyQualifiedTypeName name="day0325.Dog"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,77 @@
+package day0326;
+
+class Animal
+{
+	public void sound()
+	{
+		System.out.println("딱히 하는일이 없음");
+	}
+}
+
+class Dog extends Animal
+{
+	@Override
+	public void sound() {
+		// TODO Auto-generated method stub
+		super.sound();
+		System.out.println("멍멍!!!");
+	}
+}
+
+class Chick extends Animal
+{
+	@Override
+	public void sound() {
+		// TODO Auto-generated method stub
+		super.sound();
+		System.out.println("삐약삐약!!!");
+	}
+}
+////////////////////////////////
+class Cat extends Animal
+{
+	@Override
+	public void sound() {
+		// TODO Auto-generated method stub
+		super.sound();
+		System.out.println("야옹야옹!!!");
+	}
+}
+public class Ex1_Abstract {
+
+	public static void hello(Animal ani)
+	{
+		ani.sound();
+		System.out.println();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		hello(new Cat());
+		hello(new Dog());
+		hello(new Chick());
+		hello(new Animal());
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
