@@ -1,0 +1,10 @@
+package day0326;
+
+public class Ex15_FileException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package day0326;
+
+public class Ex15_FileException {
+
+	static final String FILENAME="d:/naver0314/memo1.txt";
+	
+	static public void fileSave()
+	{
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		fileSave();
+	}
+
+}

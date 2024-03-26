@@ -1,0 +1,22 @@
+package day0326;
+//인터페이스와 클래스 상속 활용방안을 보기 위한 예제
+
+import javax.swing.JFrame;
+
+class MyFrame extends JFrame
+{
+	public MyFrame() {
+		super("701화이팅");
+		this.setLocation(300, 100);//프레임 시작위치
+		this.setSize(300, 300);//프레임의 너비,높이
+		this.setVisible(true);//프레임이 보이도록		
+	}
+}
+public class Ex6_WindowFrame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyFrame my=new MyFrame();
+	}
+
+}

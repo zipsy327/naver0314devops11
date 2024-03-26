@@ -1,0 +1,17 @@
+package day0326;
+
+import java.util.Date;
+
+public class Ex14_Exception {
+
+	static public void go1() throws NullPointerException
+	{
+		Date date=null;
+		System.out.println(date.getYear());
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		go1();
+	}
+
+}

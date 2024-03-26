@@ -1,0 +1,10 @@
+package day0326;
+
+public class Ex10_AnonyInner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

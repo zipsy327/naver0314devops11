@@ -1,0 +1,30 @@
+package day0326;
+
+class OuterClass
+{
+	int a=10;
+	static int b=20;
+	
+	class InnerClass
+	{
+		int c=30;
+		static int d=40;
+		
+		public void show()
+		{
+			System.out.println("a="+a);
+			System.out.println("b="+b);
+			System.out.println("c="+c);
+			System.out.println("d="+d);			
+		}
+	}
+}
+
+public class Ex9_InnerClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

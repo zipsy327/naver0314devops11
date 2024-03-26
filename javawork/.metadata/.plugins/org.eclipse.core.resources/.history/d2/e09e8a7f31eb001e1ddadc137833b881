@@ -1,0 +1,27 @@
+package day0326;
+
+abstract class Hello
+{
+	abstract public void study();
+}
+
+class Kiwi
+{
+	Hello h=new Hello() {
+		
+		@Override
+		public void study() {
+			// TODO Auto-generated method stub
+			System.out.println("익명 내부 클래스에 대해서 공부중");
+		}
+	};
+}
+public class Ex10_AnonyInner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Kiwi k=new Kiwi();
+		k.h.study();
+	}
+
+}

@@ -1,0 +1,36 @@
+package day0326;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Ex15_FileException {
+
+	static final String FILENAME="d:/naver0314/memo1.txt";
+	
+	static public void fileSave()
+	{
+		FileWriter fw=null;
+		try {
+			fw=new FileWriter(FILENAME);
+			fw.write("이름 : 홍길동\n");
+			fw.write("나이 : 20세\n");
+			fw.write("주소 : 강남구\n");			
+			System.out.println("파일을 확인하세요");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				fw.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		fileSave();
+	}
+
+}
