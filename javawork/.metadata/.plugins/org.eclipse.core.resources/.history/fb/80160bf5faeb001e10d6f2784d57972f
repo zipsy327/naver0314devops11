@@ -9,7 +9,6 @@ package day0327;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
@@ -38,7 +37,7 @@ public class Ex7_Vector {
 		
 		try {
 			fr=new FileReader(FILENAME);
-			br=new BufferedReader(fr);
+			br=new BufferedReader(br);
 			
 			while(true)
 			{
@@ -54,34 +53,14 @@ public class Ex7_Vector {
 			//e.printStackTrace();
 			System.out.println("읽어올 명단이 없습니다");
 		}finally {
-			if(br!=null)br.close();
-			if(fr!=null)fr.close();
+			br.close();
+			fr.close();
 		}
 	}
 	
 	//종료시 저장
 	public void personSave()
 	{
-		FileWriter fw=null;
-		try {
-			fw=new FileWriter(FILENAME);
-			for(String s:list)
-			{
-				fw.write(s+"\n");
-			}
-			System.out.println("총 "+list.size()+"명의 명단을 파일에 저장합니다");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally {
-			if(fw!=null)
-				try {
-					fw.close();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-		}
 		
 	}
 	//메뉴 선택시 번호 반환
