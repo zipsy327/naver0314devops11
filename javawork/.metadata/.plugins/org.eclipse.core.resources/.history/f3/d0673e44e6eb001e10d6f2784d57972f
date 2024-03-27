@@ -1,0 +1,17 @@
+package day0327;
+
+import java.util.List;
+import java.util.Vector;
+
+public class Ex6_List {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> list1=new Vector<String>();
+		List<String> list2=new Vector<String>(5);
+		
+		System.out.println("list1 데이타 갯수:"+list1.size());
+		System.out.println("list1의 할당된 갯수 : "+((Vector<String>)list1).capacity());
+	}
+
+}

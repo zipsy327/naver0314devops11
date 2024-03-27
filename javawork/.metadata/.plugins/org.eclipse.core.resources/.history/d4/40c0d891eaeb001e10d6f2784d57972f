@@ -1,0 +1,101 @@
+package day0327;
+/*
+ * 1.이름추가  2.이름삭제  3.이름출력  4.이름검색  5.종료
+ */
+
+import java.util.List;
+import java.util.Scanner;
+import java.util.Vector;
+
+public class Ex7_Vector {
+	Scanner sc=new Scanner(System.in);
+	List<String> list=new Vector<String>();
+	
+	//메뉴 선택시 번호 반환
+	public int getMenu()
+	{
+		int menu=0;
+		System.out.println("-".repeat(30));
+		System.out.println("1.이름추가  2.이름삭제  3.이름출력  4.이름검색  5.종료");
+		System.out.println("-".repeat(30));
+		menu=Integer.parseInt(sc.nextLine());
+		return menu;		
+	}
+	
+	public void addPerson()
+	{
+		
+	}
+	
+	public void deletePerson()
+	{
+		
+	}
+	
+	public void listPerson()
+	{
+		
+	}
+	
+	public void searchPerson()
+	{
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Ex7_Vector ex=new Ex7_Vector();
+		while(true)
+		{
+			int menu=ex.getMenu();
+			if(menu==5)
+			{
+				System.out.println("** 종료합니다 **");
+				break;
+			}
+			
+			switch(menu)
+			{
+			case 1:
+				ex.addPerson();
+				break;
+			case 2:
+				ex.deletePerson();
+				break;
+			case 3:
+				ex.listPerson();
+				break;
+			case 4:
+				ex.searchPerson();
+				break;
+			default:
+				System.out.println("**번호 입력이 잘못되었어요 **");
+			}
+			System.out.println();
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
