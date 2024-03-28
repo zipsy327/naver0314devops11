@@ -1,0 +1,63 @@
+package day0328;
+
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+import javax.swing.JRadioButton;
+
+public class Ex6_SwingCanvasRadio extends JFrame{
+	
+	final static String PHOTO1="D:\\naver0314\\workall\\image\\연예인사진\\19.jpg";//수지
+	final static String PHOTO2="D:\\naver0314\\workall\\image\\연예인사진\\18.jpg";//신세경
+	final static String PHOTO3="D:\\naver0314\\workall\\image\\연예인사진\\15.jpg";//설현
+	final static String PHOTO4="D:\\naver0314\\workall\\image\\연예인사진\\2.jpg";//김우빈
+	
+	Color boxColor=new Color(67,196,207);//초기 박스 색상
+	JRadioButton rbBox1,rbBox2,rbBox3,rbBox4;
+	JRadioButton rbPhoto1,rbPhoto2,rbPhoto3,rbPhoto4;
+	int photoIndex=1;//처음에 수지사진
+	
+	MyDraw draw=new MyDraw();
+	
+	public Ex6_SwingCanvasRadio(String title) {
+		// TODO Auto-generated constructor stub
+		super(title);
+		this.setLocation(100, 100);//시작위치
+		this.setSize(400, 500);//창크기
+		//this.getContentPane().setBackground(new Color(93, 199, 187));//배경색 변경
+		//this.getContentPane().setBackground(Color.yellow);//배경색 변경
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//프레임 종료
+		this.initDesign();//각종 컴포넌트 생성
+		this.setVisible(true);
+	}
+	
+	//캔바스 내부 클래스
+	class MyDraw extends Canvas
+	{
+		@Override
+		public void paint(Graphics g) {
+			// TODO Auto-generated method stub
+			super.paint(g);
+			
+			//채워진 박스 그리기
+			g.setColor(boxColor);
+			g.fillRect(30, 70, 320, 320);
+			
+			
+			
+		}
+	}
+	
+	public void initDesign()
+	{
+		this.add("Center",draw);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Ex6_SwingCanvasRadio a=new Ex6_SwingCanvasRadio("캔바스2");
+	}
+
+}

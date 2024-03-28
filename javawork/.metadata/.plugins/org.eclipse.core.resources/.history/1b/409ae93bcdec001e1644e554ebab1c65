@@ -63,11 +63,11 @@ public class Ex5_SwingCanvas extends JFrame{
 			
 			//음식이미지 그리기 방법 #1
 			Image image1=new ImageIcon(foodImage).getImage();
-			g.drawImage(image1, 300, 10, 130, 130, this);
+			g.drawImage(image1, 300, 50, 130, 130, this);
 			
 			//음식이미지 그리기 방법 #2
 			Image image2=Toolkit.getDefaultToolkit().getImage(foodImage2);
-			g.drawImage(image2, 300, 150, 130, 130, this);
+			g.drawImage(image2, 300, 250, 130, 130, this);
 		}
 	}
 	
