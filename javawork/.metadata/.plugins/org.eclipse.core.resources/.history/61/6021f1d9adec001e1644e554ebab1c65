@@ -1,0 +1,23 @@
+package day0328;
+
+import java.util.List;
+import java.util.Vector;
+
+public class Ex3_LambdaForEach {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//List 에 데이타를 넣는 방법 1
+		List<String> list1=new Vector<String>();
+		list1.add("빨강색");
+		list1.add("노랑색");
+		list1.add("분홍색");
+		list1.add("초록색");
+		
+		for(String s:list1)
+			System.out.println(s);
+		
+
+	}
+
+}

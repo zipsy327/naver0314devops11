@@ -1,8 +1,4 @@
 package day0328;
-
-import java.util.Arrays;
-import java.util.List;
-
 /*
  * 자바에서의 함수형 프로그램인 람다(Lambda) 표현식은 인터페이스를 사용하는
 익명 내부 클래스의 또다른 표현식이다
@@ -60,21 +56,11 @@ public class Ex2_Lambda {
 		
 		or4.write();
 	}
-	
-	public void lambdaMethod2()
-	{
-		DataAdd add1=(int x,int y)->System.out.println("두수의 합:"+(x+y));
-		
-		add1.add(10, 20);
-		add1.add(5, 6);
-	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Ex2_Lambda ex=new Ex2_Lambda();
 		ex.or.write();
 		ex.lambdaMethod();
-		
-		ex.lambdaMethod2();
 	}
 
 }

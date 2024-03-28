@@ -66,7 +66,6 @@ public class Ex2_Lambda {
 		DataAdd add1=(int x,int y)->System.out.println("두수의 합:"+(x+y));
 		
 		add1.add(10, 20);
-		add1.add(5, 6);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

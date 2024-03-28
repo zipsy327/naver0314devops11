@@ -1,0 +1,19 @@
+package day0328;
+
+import javax.swing.JFrame;
+
+public class SwingGibon extends JFrame{
+	public SwingGibon(String title) {
+		// TODO Auto-generated constructor stub
+		super(title);
+		this.setLocation(100, 100);//시작위치
+		this.setSize(300, 300);//창크기
+		this.setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SwingGibon a=new SwingGibon("기본창");
+	}
+
+}
