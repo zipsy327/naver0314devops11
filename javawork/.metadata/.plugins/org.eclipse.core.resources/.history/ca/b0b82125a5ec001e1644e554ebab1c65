@@ -23,12 +23,12 @@ public class Ex9_VectorMunje {
 	static final String FILENAME="d:/naver0314/student.txt";
 	Scanner sc=new Scanner(System.in);
 	List<StudentDto> list=new Vector<StudentDto>();
-
+	
 	public Ex9_VectorMunje() {
 		// TODO Auto-generated constructor stub
 		studentReadData();//처음 생성시 무조건 파일 읽어서 list 에 담기
 	}
-
+	
 	//파일에서 데이타 읽기
 	public void studentReadData()
 	{
@@ -37,7 +37,7 @@ public class Ex9_VectorMunje {
 		try {
 			fr=new FileReader(FILENAME);
 			br=new BufferedReader(fr);
-
+			
 			while(true)
 			{
 				//한줄단위로 읽기
@@ -53,7 +53,7 @@ public class Ex9_VectorMunje {
 				dto.setJava(Integer.parseInt(data[2]));
 				dto.setSpring(Integer.parseInt(data[3]));
 				dto.setHtml(Integer.parseInt(data[4]));
-
+				
 				//list 에 추가
 				list.add(dto);
 			}
@@ -71,9 +71,9 @@ public class Ex9_VectorMunje {
 				// TODO: handle exception
 			}
 		}
-
+		
 	}
-
+	
 	public int getMenu()
 	{
 		int menu=0;
@@ -92,12 +92,12 @@ public class Ex9_VectorMunje {
 		}
 		return menu;
 	}
-
+	
 	public void addStudent()
 	{
 		System.out.println("학생 이름을 입력해주세요");
 		String name=sc.nextLine();
-
+		
 		int age,java,spring,html;
 		System.out.println("나이를 입력해주세요");
 		try {
@@ -106,7 +106,7 @@ public class Ex9_VectorMunje {
 			//만약 문자가 입력시 무조건 나이는 0으로 주기
 			age=0;
 		}
-
+		
 		System.out.println("자바점수를 입력해주세요");
 		try {
 			java=Integer.parseInt(sc.nextLine());
@@ -114,7 +114,7 @@ public class Ex9_VectorMunje {
 			//만약 문자가 입력시 무조건 0으로 주기
 			java=0;
 		}
-
+		
 		System.out.println("스프링점수를 입력해주세요");
 		try {
 			spring=Integer.parseInt(sc.nextLine());
@@ -122,7 +122,7 @@ public class Ex9_VectorMunje {
 			//만약 문자가 입력시 무조건 0으로 주기
 			spring=0;
 		}
-
+		
 		System.out.println("HTML점수를 입력해주세요");
 		try {
 			html=Integer.parseInt(sc.nextLine());
@@ -130,37 +130,18 @@ public class Ex9_VectorMunje {
 			//만약 문자가 입력시 무조건 0으로 주기
 			html=0;
 		}
-
+		
 		//StudentDto 생성후 list 에 추가
 		StudentDto dto=new StudentDto(name, age, java, spring, html);
 		list.add(dto);
 		System.out.println(list.size()+"번째 학생정보를 추가하였습니다");
 	}
-
+	
 	public void deleteStudent()
 	{
-		boolean f=false;
-		System.out.println("삭제할 학생의 이름은?");
-		String name=sc.nextLine();
-
-		for(int i=0;i<list.size();i++)
-		{
-			StudentDto dto=list.get(i);
-			if(dto.getName().equals(name))
-			{
-				f=true;
-				//삭제
-				list.remove(i);
-				break;
-			}
-		}
-
-		if(f)
-			System.out.println(name+" 님의 정보를 삭제했습니다");
-		else
-			System.out.println(name+"님은 명단에 없습니다");
+		
 	}
-
+	
 	public void writeStudent()
 	{
 		System.out.println("\t\t** 전체 학생정보 출력 **\n");
@@ -170,68 +151,28 @@ public class Ex9_VectorMunje {
 		//평균은 소숫점 한자리로 출력해보자
 		NumberFormat nf=NumberFormat.getInstance();
 		nf.setMaximumFractionDigits(1);
-
+		
 		for(int i=0;i<list.size();i++)
 		{
 			StudentDto dto=list.get(i);
 			System.out.println(i+1+"\t"+dto.getName()+"\t"+dto.getAge()+"\t"+
-					dto.getJava()+"\t"+dto.getSpring()+"\t"+dto.getHtml()+"\t"+dto.getTotal()
-					+"\t"+nf.format(dto.getAvg())+"\t"+dto.getGrade());
+			dto.getJava()+"\t"+dto.getSpring()+"\t"+dto.getHtml()+"\t"+dto.getTotal()
+			+"\t"+nf.format(dto.getAvg())+"\t"+dto.getGrade());
 		}
 		System.out.println("=".repeat(70));
-
+		
 	}
-
+	
 	public void searchAverage()
 	{
-		//입력하는 평균값 이상의 학생정보만 출력하기
-		System.out.println("검색할 평균값은?");
-		double avg=Double.parseDouble(sc.nextLine());
-
-		System.out.printf("\t\t** %5.1f 평균이상의 학생정보 출력 **\n",avg);
-		System.out.println("=".repeat(70));
-		System.out.println("번호\t이름\t나이\tJava\tSpring\tHTML\t총점\t평균\t등급");
-		System.out.println("=".repeat(70));
-		//평균은 소숫점 한자리로 출력해보자
-		NumberFormat nf=NumberFormat.getInstance();
-		nf.setMaximumFractionDigits(1);
-
-		for(int i=0;i<list.size();i++)
-		{
-			StudentDto dto=list.get(i);
-			if(dto.getAvg()>=avg)
-				System.out.println(i+1+"\t"+dto.getName()+"\t"+dto.getAge()+"\t"+
-						dto.getJava()+"\t"+dto.getSpring()+"\t"+dto.getHtml()+"\t"+dto.getTotal()
-						+"\t"+nf.format(dto.getAvg())+"\t"+dto.getGrade());
-		}
-		System.out.println("=".repeat(70));
+		
 	}
-
+	
 	public void searchName()
 	{
-		//입력하는 이름을 포함한 학생정보만 출력하기
-		System.out.println("검색할 이름은?");
-		String name=sc.nextLine();
-
-		System.out.printf("\t\t** \"%s\" 이름을 포함한 학생정보 출력 **\n",name);
-		System.out.println("=".repeat(70));
-		System.out.println("번호\t이름\t나이\tJava\tSpring\tHTML\t총점\t평균\t등급");
-		System.out.println("=".repeat(70));
-		//평균은 소숫점 한자리로 출력해보자
-		NumberFormat nf=NumberFormat.getInstance();
-		nf.setMaximumFractionDigits(1);
-
-		for(int i=0;i<list.size();i++)
-		{
-			StudentDto dto=list.get(i);
-			if(dto.getName().contains(name))
-				System.out.println(i+1+"\t"+dto.getName()+"\t"+dto.getAge()+"\t"+
-						dto.getJava()+"\t"+dto.getSpring()+"\t"+dto.getHtml()+"\t"+dto.getTotal()
-						+"\t"+nf.format(dto.getAvg())+"\t"+dto.getGrade());
-		}
-		System.out.println("=".repeat(70));
+		
 	}
-
+	
 	public void studentFileSave()
 	{
 		FileWriter fw=null;
@@ -256,15 +197,15 @@ public class Ex9_VectorMunje {
 					e.printStackTrace();
 				}
 		}
-
+		
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//System.out.println("컴퓨터".contains("컴"));//true
 		//System.out.println("컴퓨터".contains("하"));//false
-
+		
 		Ex9_VectorMunje ex=new Ex9_VectorMunje();
-
+		
 		while(true)
 		{
 			int menu=ex.getMenu();
@@ -292,7 +233,7 @@ public class Ex9_VectorMunje {
 			}
 			System.out.println();
 		}
-
+		
 	}
 
 }
