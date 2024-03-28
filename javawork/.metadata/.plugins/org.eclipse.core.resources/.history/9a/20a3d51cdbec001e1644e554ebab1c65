@@ -169,9 +169,8 @@ public class Ex6_SwingCanvasRadio extends JFrame{
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					// TODO Auto-generated method stub
-					//photoIndex=i+1;
 					photoIndex=n;
-					draw.repaint();//캔바스 내부클래스의 paint 메소드 강제 호출
+					draw.repaint();
 				}
 			});
 		}

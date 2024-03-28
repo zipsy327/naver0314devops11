@@ -22,9 +22,8 @@ public class Ex6_SwingCanvasRadio extends JFrame{
 
 	Color boxColor=new Color(67,196,207);//초기 박스 색상
 	JRadioButton rbBox1,rbBox2,rbBox3,rbBox4;
-	JRadioButton []rbPhoto=new JRadioButton[4];
-	
-	int photoIndex=3;//처음에 수지사진
+	JRadioButton rbPhoto1,rbPhoto2,rbPhoto3,rbPhoto4;
+	int photoIndex=2;//처음에 수지사진
 
 	MyDraw draw=new MyDraw();
 
@@ -113,7 +112,7 @@ public class Ex6_SwingCanvasRadio extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				boxColor=new Color(67,196,207);
+				boxColor=new Color(67,196,207);;
 				//캔바스의 paint 메서드 강제호출
 				draw.repaint();
 			}
@@ -125,7 +124,7 @@ public class Ex6_SwingCanvasRadio extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				boxColor=new Color(235,171,223);
+				boxColor=Color.magenta;
 				//캔바스의 paint 메서드 강제호출
 				draw.repaint();
 			}
@@ -137,7 +136,7 @@ public class Ex6_SwingCanvasRadio extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				boxColor=new Color(191,136,5);
+				boxColor=Color.orange;
 				//캔바스의 paint 메서드 강제호출
 				draw.repaint();
 			}
@@ -145,38 +144,6 @@ public class Ex6_SwingCanvasRadio extends JFrame{
 
 		//프레임 상단에 Panel 추가
 		this.add("North",pTop);
-		
-		//프레임의 하단에는 사진선택하는 라디오 버튼 추가
-		JPanel pBottom=new JPanel();
-		ButtonGroup bg2=new ButtonGroup();
-		
-		String []s= {"수지","신세경","설현","김우빈"};
-		
-		
-		for(int i=0;i<rbPhoto.length;i++)
-		{
-			final int n=i+1;
-			
-			rbPhoto[i]=new JRadioButton(s[i], i==(photoIndex-1)?true:false);
-			//그룹변수에 추가
-			bg2.add(rbPhoto[i]);
-			//페널에도 추가
-			pBottom.add(rbPhoto[i]);
-			
-			//이벤트
-			rbPhoto[i].addActionListener(new ActionListener() {
-				
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					// TODO Auto-generated method stub
-					//photoIndex=i+1;
-					photoIndex=n;
-					draw.repaint();//캔바스 내부클래스의 paint 메소드 강제 호출
-				}
-			});
-		}
-		
-		this.add("South",pBottom);
 	}
 
 	public static void main(String[] args) {

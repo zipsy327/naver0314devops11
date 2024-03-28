@@ -24,7 +24,7 @@ public class Ex6_SwingCanvasRadio extends JFrame{
 	JRadioButton rbBox1,rbBox2,rbBox3,rbBox4;
 	JRadioButton []rbPhoto=new JRadioButton[4];
 	
-	int photoIndex=3;//처음에 수지사진
+	int photoIndex=2;//처음에 수지사진
 
 	MyDraw draw=new MyDraw();
 
@@ -151,29 +151,13 @@ public class Ex6_SwingCanvasRadio extends JFrame{
 		ButtonGroup bg2=new ButtonGroup();
 		
 		String []s= {"수지","신세경","설현","김우빈"};
-		
-		
 		for(int i=0;i<rbPhoto.length;i++)
 		{
-			final int n=i+1;
-			
 			rbPhoto[i]=new JRadioButton(s[i], i==(photoIndex-1)?true:false);
 			//그룹변수에 추가
 			bg2.add(rbPhoto[i]);
 			//페널에도 추가
 			pBottom.add(rbPhoto[i]);
-			
-			//이벤트
-			rbPhoto[i].addActionListener(new ActionListener() {
-				
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					// TODO Auto-generated method stub
-					//photoIndex=i+1;
-					photoIndex=n;
-					draw.repaint();//캔바스 내부클래스의 paint 메소드 강제 호출
-				}
-			});
 		}
 		
 		this.add("South",pBottom);
