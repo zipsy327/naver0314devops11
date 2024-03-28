@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.NumberFormat;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Vector;
@@ -36,32 +35,8 @@ public class Ex9_VectorMunje {
 		try {
 			fr=new FileReader(FILENAME);
 			br=new BufferedReader(fr);
-			
-			while(true)
-			{
-				//한줄단위로 읽기
-				String line=br.readLine();
-				if(line==null)
-					break;
-				//,단위로 분리(배열형태로 분리)
-				String []data=line.split(",");
-				//StudentDto 생성후 setter 로 데이타 넣기 또는 생성자 통해서 넣기도됨
-				StudentDto dto=new StudentDto();
-				dto.setName(data[0]);
-				dto.setAge(Integer.parseInt(data[1]));
-				dto.setJava(Integer.parseInt(data[2]));
-				dto.setSpring(Integer.parseInt(data[3]));
-				dto.setHtml(Integer.parseInt(data[4]));
-				
-				//list 에 추가
-				list.add(dto);
-			}
-			System.out.println("총 "+list.size()+"명의 학생정보를 읽어왔습니다!");
 		} catch (FileNotFoundException e) {
 			System.out.println("읽어올 학생 정보가 없습니다");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}finally {
 			try {
 				br.close();
@@ -94,46 +69,7 @@ public class Ex9_VectorMunje {
 	
 	public void addStudent()
 	{
-		System.out.println("학생 이름을 입력해주세요");
-		String name=sc.nextLine();
 		
-		int age,java,spring,html;
-		System.out.println("나이를 입력해주세요");
-		try {
-			age=Integer.parseInt(sc.nextLine());
-		}catch (NumberFormatException e) {
-			//만약 문자가 입력시 무조건 나이는 0으로 주기
-			age=0;
-		}
-		
-		System.out.println("자바점수를 입력해주세요");
-		try {
-			java=Integer.parseInt(sc.nextLine());
-		}catch (NumberFormatException e) {
-			//만약 문자가 입력시 무조건 0으로 주기
-			java=0;
-		}
-		
-		System.out.println("스프링점수를 입력해주세요");
-		try {
-			spring=Integer.parseInt(sc.nextLine());
-		}catch (NumberFormatException e) {
-			//만약 문자가 입력시 무조건 0으로 주기
-			spring=0;
-		}
-		
-		System.out.println("HTML점수를 입력해주세요");
-		try {
-			html=Integer.parseInt(sc.nextLine());
-		}catch (NumberFormatException e) {
-			//만약 문자가 입력시 무조건 0으로 주기
-			html=0;
-		}
-		
-		//StudentDto 생성후 list 에 추가
-		StudentDto dto=new StudentDto(name, age, java, spring, html);
-		list.add(dto);
-		System.out.println(list.size()+"번째 학생정보를 추가하였습니다");
 	}
 	
 	public void deleteStudent()
@@ -143,22 +79,6 @@ public class Ex9_VectorMunje {
 	
 	public void writeStudent()
 	{
-		System.out.println("\t\t** 전체 학생정보 출력 **\n");
-		System.out.println("=".repeat(70));
-		System.out.println("번호\t이름\t나이\tJava\tSpring\tHTML\t총점\t평균\t등급");
-		System.out.println("=".repeat(70));
-		//평균은 소숫점 한자리로 출력해보자
-		NumberFormat nf=NumberFormat.getInstance();
-		nf.setMaximumFractionDigits(1);
-		
-		for(int i=0;i<list.size();i++)
-		{
-			StudentDto dto=list.get(i);
-			System.out.println(i+1+"\t"+dto.getName()+"\t"+dto.getAge()+"\t"+
-			dto.getJava()+"\t"+dto.getSpring()+"\t"+dto.getHtml()+"\t"+dto.getTotal()
-			+"\t"+nf.format(dto.getAvg())+"\t"+dto.getGrade());
-		}
-		System.out.println("=".repeat(70));
 		
 	}
 	

@@ -83,7 +83,7 @@ public class StudentDto {
 			return "*****";
 		else if(getAvg()>=80)
 			return "****";
-		else if(getAvg()>=70)
+		else if(getAvg()>=80)
 			return "***";
 		else
 			return "*";

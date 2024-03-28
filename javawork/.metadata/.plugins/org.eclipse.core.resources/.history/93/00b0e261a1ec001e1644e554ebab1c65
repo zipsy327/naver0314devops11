@@ -147,7 +147,7 @@ public class Ex9_VectorMunje {
 		System.out.println("=".repeat(70));
 		System.out.println("번호\t이름\t나이\tJava\tSpring\tHTML\t총점\t평균\t등급");
 		System.out.println("=".repeat(70));
-		//평균은 소숫점 한자리로 출력해보자
+		//평균은 소숫점 한자리;로 출력해보자
 		NumberFormat nf=NumberFormat.getInstance();
 		nf.setMaximumFractionDigits(1);
 		
@@ -156,7 +156,7 @@ public class Ex9_VectorMunje {
 			StudentDto dto=list.get(i);
 			System.out.println(i+1+"\t"+dto.getName()+"\t"+dto.getAge()+"\t"+
 			dto.getJava()+"\t"+dto.getSpring()+"\t"+dto.getHtml()+"\t"+dto.getTotal()
-			+"\t"+nf.format(dto.getAvg())+"\t"+dto.getGrade());
+			+"\t"+dto.getAvg()+"\t"+dto.getGrade());
 		}
 		System.out.println("=".repeat(70));
 		

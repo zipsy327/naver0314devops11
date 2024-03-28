@@ -1,0 +1,133 @@
+package day0327;
+
+import java.util.List;
+import java.util.Scanner;
+import java.util.Vector;
+
+/*
+ *   1.학생정보추가 : 이름,나이,3과목 점수입력
+ *   2.학생정보삭제 : 이름으로 찾아서 삭제(없을경우 메세지 출력)
+ *   3.전체출력 : 번호,이름,Java,Spring,HTML,총점,평균,등급 출력
+ *   4.평균으로검색 :  평균값을 입력하면 그 평균값 이상의 학생들을 출력
+ *   5.이름으로검색 : 입력한이름을 포함하고 있으면 출력(contains)
+ *   6.저장후종료
+ */
+public class Ex9_VectorMunje {
+
+	static final String FILENAME="d:/naver0314/student.txt";
+	Scanner sc=new Scanner(System.in);
+	List<StudentDto> list=new Vector<StudentDto>();
+	
+	public Ex9_VectorMunje() {
+		// TODO Auto-generated constructor stub
+		studentReadData();//처음 생성시 무조건 파일 읽어서 list 에 담기
+	}
+	
+	//파일에서 데이타 읽기
+	public void studentReadData()
+	{
+		
+	}
+	
+	public int getMenu()
+	{
+		int menu=0;
+		System.out.println("1.학생정보추가");
+		System.out.println("2.학생정보삭제");
+		System.out.println("3.전체출력");
+		System.out.println("4.평균으로검색");
+		System.out.println("5.이름으로검색");
+		System.out.println("6.저장후종료");
+		System.out.println("=============");
+		try {
+			menu=Integer.parseInt(sc.nextLine());
+		}catch (NumberFormatException e) {
+			//만약 문자가 입력되면 무조건 전체출력을 해보자
+			menu=3;
+		}
+		return menu;
+	}
+	
+	public void addStudent()
+	{
+		
+	}
+	
+	public void deleteStudent()
+	{
+		
+	}
+	
+	public void writeStudent()
+	{
+		
+	}
+	
+	public void searchAverage()
+	{
+		
+	}
+	
+	public void searchName()
+	{
+		
+	}
+	
+	public void studentFileSave()
+	{
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("컴퓨터".contains("컴"));//true
+		//System.out.println("컴퓨터".contains("하"));//false
+		
+		Ex9_VectorMunje ex=new Ex9_VectorMunje();
+		
+		while(true)
+		{
+			int menu=ex.getMenu();
+			switch(menu)
+			{
+			case 1:
+				ex.addStudent();
+				break;
+			case 2:
+				ex.deleteStudent();
+				break;
+			case 3:
+				ex.writeStudent();
+				break;
+			case 4:
+				ex.searchAverage();
+				break;
+			case 5:
+				ex.searchName();
+				break;
+			case 6:
+				ex.studentFileSave();
+				System.out.println("** 저장후 종료합니다 **");
+				System.exit(0);
+			}
+			System.out.println();
+		}
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.NumberFormat;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Vector;
@@ -144,21 +143,17 @@ public class Ex9_VectorMunje {
 	public void writeStudent()
 	{
 		System.out.println("\t\t** 전체 학생정보 출력 **\n");
-		System.out.println("=".repeat(70));
+		System.out.println("=".repeat(60));
 		System.out.println("번호\t이름\t나이\tJava\tSpring\tHTML\t총점\t평균\t등급");
-		System.out.println("=".repeat(70));
-		//평균은 소숫점 한자리로 출력해보자
-		NumberFormat nf=NumberFormat.getInstance();
-		nf.setMaximumFractionDigits(1);
-		
+		System.out.println("=".repeat(60));
 		for(int i=0;i<list.size();i++)
 		{
 			StudentDto dto=list.get(i);
 			System.out.println(i+1+"\t"+dto.getName()+"\t"+dto.getAge()+"\t"+
 			dto.getJava()+"\t"+dto.getSpring()+"\t"+dto.getHtml()+"\t"+dto.getTotal()
-			+"\t"+nf.format(dto.getAvg())+"\t"+dto.getGrade());
+			+"\t"+dto.getAvg()+"\t"+dto.getGrade());
 		}
-		System.out.println("=".repeat(70));
+		System.out.println("=".repeat(60));
 		
 	}
 	
